@@ -1,0 +1,38 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "name": {
+        "__TYPE__": "FieldContent",
+        "value": "AMAN BEDILU",
+        "type": "Text"
+      },
+      "title": {
+        "__TYPE__": "FieldContent",
+        "value": "Frontend Developer",
+        "type": "Text"
+      },
+      "subtitle": {
+        "__TYPE__": "FieldContent",
+        "value": "Frontend developer and QA-focused Information Systems student at Addis Ababa University, building reliable React and Next.js experiences with clean UI, testing discipline, and practical integrations.",
+        "type": "Text"
+      },
+      "cta_text": {
+        "__TYPE__": "FieldContent",
+        "value": "View Experience",
+        "type": "Text"
+      },
+      "cta_link": {
+        "__TYPE__": "LinkContent",
+        "key": "cta",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "#experience",
+          "text": "View Experience"
+        }
+      }
+    },
+    "items": []
+  }
+]
