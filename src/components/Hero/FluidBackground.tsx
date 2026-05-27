@@ -6,7 +6,7 @@ import { FLUID_BACKGROUND } from "@/hooks/useFluidSimulation";
 export default function FluidBackground() {
   return (
     <div
-      className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
+      className="pointer-events-none absolute inset-0 z-0 overflow-hidden"
       style={{ backgroundColor: FLUID_BACKGROUND.base }}
       aria-hidden
     >

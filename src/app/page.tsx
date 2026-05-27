@@ -35,7 +35,7 @@ export default async function Page() {
       </div>
 
       {/* Contact Section */}
-      <div className="bg-[#050508] relative z-10 border-t border-white/5">
+      <div className="relative z-10 border-t border-white/5">
         <Contact />
       </div>
     </div>

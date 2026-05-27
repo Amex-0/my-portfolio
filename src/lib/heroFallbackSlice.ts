@@ -8,7 +8,7 @@ export const heroFallbackSlice: Content.HeroSlice = {
   variation: "default",
   version: "initial",
   primary: {
-    name: "AMAN BEDILU",
+    name: "Aman Bedilu",
     title: "Frontend Developer",
     subtitle:
       "Frontend developer and QA-focused Information Systems student at Addis Ababa University, building reliable React and Next.js experiences with clean UI, testing discipline, and practical integrations.",
