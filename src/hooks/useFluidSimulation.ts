@@ -13,7 +13,8 @@ export const FLUID_CONFIG = {
   SPLAT_RADIUS: 0.25,
   SPLAT_FORCE: 5500,
   PRESSURE_ITERATIONS: 20,
-  SMOKE_COLOR: [0.8, 0.82, 0.86] as [number, number, number],
+  SMOKE_COLOR: [0.0627, 0.7255, 0.5059] as [number, number, number],
+  SMOKE_HIGHLIGHT: [0.4314, 0.9059, 0.7176] as [number, number, number],
   POINTER_SENSITIVITY: 16,
   MAX_DPR: 1.5,
   /** Ambient corner sweep (lightweight). */
@@ -26,9 +27,11 @@ export const FLUID_CONFIG = {
 } as const;
 
 export const FLUID_BACKGROUND = {
-  base: "#050508",
-  vignette: "#0c0c14",
-  accent: "rgba(55, 65, 140, 0.12)",
+  base: "#040507",
+  vignette: "#07110d",
+  emerald: "rgba(16, 185, 129, 0.16)",
+  mint: "rgba(110, 231, 183, 0.1)",
+  halo: "rgba(6, 78, 59, 0.14)",
 } as const;
 
 type Point = { x: number; y: number };
@@ -254,8 +257,13 @@ function mkDFBO(
 }
 
 function smokeTint(k: number): [number, number, number] {
-  const j = 0.9 + Math.random() * 0.15;
-  return FLUID_CONFIG.SMOKE_COLOR.map((c) => c * k * j) as [number, number, number];
+  const shimmer = 0.9 + Math.random() * 0.15;
+  const mix = Math.min(0.9, 0.25 + Math.random() * 0.5 + k * 0.15);
+
+  return FLUID_CONFIG.SMOKE_COLOR.map((c, index) => {
+    const highlight = FLUID_CONFIG.SMOKE_HIGHLIGHT[index];
+    return (c * (1 - mix) + highlight * mix) * k * shimmer;
+  }) as [number, number, number];
 }
 
 /** One directional sweep segment (from → to) at progress 0–1. */

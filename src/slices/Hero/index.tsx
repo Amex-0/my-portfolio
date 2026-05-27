@@ -106,22 +106,22 @@ const Hero = ({ slice }: HeroProps) => {
               className="mb-8 text-[clamp(3rem,16vmin,14rem)] font-extrabold leading-none tracking-tighter"
               aria-label={fullName}
             >
-              <span className="block text-slate-300">
+              <span className="block text-white drop-shadow-[0_0_18px_rgba(255,255,255,0.08)]">
                 <AnimatedText text={firstName} animationKey="first" />
               </span>
               {lastName ? (
-                <span className="-mt-[0.2em] block text-slate-500">
+                <span className="mt-[-0.2em] block text-[#34D399] drop-shadow-[0_0_18px_rgba(52,211,153,0.16)]">
                   <AnimatedText text={lastName} animationKey="last" />
                 </span>
               ) : null}
             </h1>
 
-            <span className="job-title mb-6 block bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500 bg-clip-text text-2xl font-bold uppercase tracking-[0.2em] text-transparent opacity-0 md:text-4xl">
+            <span className="job-title mb-6 block text-[#10B981] text-2xl font-bold uppercase tracking-[0.2em] opacity-0 md:text-4xl">
               {slice.primary.title}
             </span>
 
             {slice.primary.subtitle ? (
-              <p className="hero-subtitle mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-slate-400 opacity-0 md:text-xl">
+              <p className="hero-subtitle mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-[#E2E8F0] opacity-0 md:text-xl">
                 {slice.primary.subtitle}
               </p>
             ) : null}
@@ -140,7 +140,7 @@ const Hero = ({ slice }: HeroProps) => {
       
       <button
         onClick={handleScrollClick}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 text-xs font-semibold tracking-[0.2em] text-slate-500 hover:text-slate-300 transition-colors duration-300 cursor-pointer pointer-events-auto select-none bg-transparent border-0 outline-none"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 text-xs font-semibold tracking-[0.2em] text-slate-500 hover:text-[#6EE7B7] transition-colors duration-300 cursor-pointer pointer-events-auto select-none bg-transparent border-0 outline-none"
       >
         <span>SCROLL</span>
         <svg

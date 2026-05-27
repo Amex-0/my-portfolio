@@ -14,8 +14,9 @@ export default function FluidBackground() {
         className="absolute inset-0"
         style={{
           background: `
-            radial-gradient(ellipse 90% 55% at 50% -10%, ${FLUID_BACKGROUND.accent}, transparent 55%),
-            radial-gradient(ellipse 70% 50% at 85% 95%, rgba(70, 45, 110, 0.08), transparent 45%),
+            radial-gradient(ellipse 90% 60% at 50% -10%, ${FLUID_BACKGROUND.emerald}, transparent 55%),
+            radial-gradient(ellipse 68% 50% at 84% 94%, ${FLUID_BACKGROUND.mint}, transparent 46%),
+            radial-gradient(ellipse 72% 46% at 14% 96%, ${FLUID_BACKGROUND.halo}, transparent 48%),
             radial-gradient(circle at center, transparent 28%, ${FLUID_BACKGROUND.vignette} 100%)
           `,
         }}

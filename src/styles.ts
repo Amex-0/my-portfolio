@@ -6,5 +6,5 @@ export const styles = {
   sectionHeadText:
     "text-white font-semibold md:text-[50px] sm:text-[40px] text-[30px] tracking-tight",
   sectionSubText:
-    "text-blue-500 text-xs font-bold uppercase tracking-[0.2em]",
+    "text-[#10B981] text-xs font-bold uppercase tracking-[0.2em]",
 };

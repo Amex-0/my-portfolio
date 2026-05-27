@@ -56,9 +56,9 @@ function ContactComponent() {
           animate={settled && isLarge ? { x: 24 } : { x: 0 }}
           transition={{ type: "tween", delay: 0.2, duration: 0.9, ease: "easeOut" }}
           onAnimationComplete={() => setSettled(true)}
-          className="w-full bg-white/5 p-4 rounded-2xl border border-white/10 hover:border-blue-500/30 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
+          className="w-full bg-white/5 p-4 rounded-2xl border border-white/10 hover:border-[#10B981]/30 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
         >
-        <p className="text-blue-500 text-xs font-bold uppercase tracking-[0.2em] mb-2">Contact Aman Bedilu</p>
+        <p className="text-[#10B981] text-xs font-bold uppercase tracking-[0.2em] mb-2">Contact Aman Bedilu</p>
         <h3 className="text-white font-semibold md:text-[50px] sm:text-[40px] text-[30px] tracking-tight">
           Let's connect.
         </h3>
@@ -86,7 +86,7 @@ function ContactComponent() {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your name?"
-                className="bg-white/5 py-3 px-4 placeholder:text-white/30 text-white rounded-xl outline-none border border-white/10 focus:border-blue-500/50 font-medium transition-all text-sm"
+                className="bg-white/5 py-3 px-4 placeholder:text-white/30 text-white rounded-xl outline-none border border-white/10 focus:border-[#10B981]/50 font-medium transition-all text-sm"
               />
             </label>
 
@@ -99,7 +99,7 @@ function ContactComponent() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your email address?"
-                className="bg-white/5 py-3 px-4 placeholder:text-white/30 text-white rounded-xl outline-none border border-white/10 focus:border-blue-500/50 font-medium transition-all text-sm"
+                className="bg-white/5 py-3 px-4 placeholder:text-white/30 text-white rounded-xl outline-none border border-white/10 focus:border-[#10B981]/50 font-medium transition-all text-sm"
               />
             </label>
 
@@ -112,14 +112,14 @@ function ContactComponent() {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
-                className="bg-white/5 py-3 px-4 placeholder:text-white/30 text-white rounded-xl outline-none border border-white/10 focus:border-blue-500/50 font-medium transition-all resize-none text-sm"
+                className="bg-white/5 py-3 px-4 placeholder:text-white/30 text-white rounded-xl outline-none border border-white/10 focus:border-[#10B981]/50 font-medium transition-all resize-none text-sm"
               />
             </label>
 
             <button
               type="submit"
               disabled={loading}
-              className="bg-white text-black py-3 px-6 rounded-xl outline-none w-fit font-bold shadow-md hover:bg-blue-500 hover:text-white transition-all flex items-center justify-center gap-2 text-sm cursor-pointer disabled:opacity-50"
+              className="bg-white text-black py-3 px-6 rounded-xl outline-none w-fit font-bold shadow-md hover:bg-[#6EE7B7] hover:text-[#064E3B] transition-all flex items-center justify-center gap-2 text-sm cursor-pointer disabled:opacity-50"
             >
               {loading ? "Sending..." : "Send"}
               <Send className="w-4 h-4" />

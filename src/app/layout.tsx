@@ -22,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-[#050508] scroll-smooth">
+    <html lang="en" className="bg-[#040507] scroll-smooth">
       <body
-        className={clsx(urbanist.className, "relative min-h-screen bg-[#050508]")}
+        className={clsx(urbanist.className, "relative min-h-screen bg-[#040507] text-[#E2E8F0]")}
       >
         <Navbar />
         {children}

@@ -7,7 +7,7 @@ const ITEMS = [
   { id: 1, label: "C++", className: "bg-yellow-400 text-black" },
   { id: 2, label: "C#", className: "bg-purple-600 text-white" },
   { id: 3, label: "REACT", className: "bg-red-500 text-white" },
-  { id: 4, label: "NEXTJS", className: "bg-blue-500 text-white" },
+  { id: 4, label: "NEXTJS", className: "bg-[#10B981] text-white" },
   { id: 5, label: "REACT NATIVE", className: "bg-green-500 text-black" },
   { id: 6, label: "CSS", className: "bg-white text-black border border-black" },
   { id: 7, label: "JAVASCRIPT", className: "bg-pink-500 text-white" },
@@ -118,11 +118,11 @@ export default function PhysicsSandbox() {
   return (
     <section
       ref={sceneRef}
-      className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-zinc-900 to-black"
+      className="relative h-screen w-full overflow-hidden bg-[#040507]"
     >
       {/* Background watermark text */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-        <h2 className="text-[20vw] font-black tracking-tighter text-white/5 select-none">
+        <h2 className="text-[20vw] font-black tracking-tighter text-[#10B981]/10 select-none">
           SKILLS
         </h2>
       </div>
