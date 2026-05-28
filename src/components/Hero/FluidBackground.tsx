@@ -1,7 +1,14 @@
 "use client";
 
 import FluidCanvas from "@/components/FluidCanvas";
-import { FLUID_BACKGROUND } from "@/hooks/useFluidSimulation";
+
+const FLUID_BACKGROUND = {
+  base: "#040507",
+  vignette: "#07110d",
+  emerald: "rgba(16, 185, 129, 0.16)",
+  mint: "rgba(110, 231, 183, 0.1)",
+  halo: "rgba(6, 78, 59, 0.14)",
+} as const;
 
 export default function FluidBackground() {
   return (
